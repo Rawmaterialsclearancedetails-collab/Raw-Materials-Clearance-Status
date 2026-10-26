@@ -56,7 +56,7 @@ function showError(message) {
    LOAD DATA FROM GOOGLE SHEETS
    Paste your "Publish to web" CSV link between the quotes below
    ===================================================== */
-const SHEET_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTGE6x8lETpmfMSMlwotUXpQtjFwdkPFcF6bPHPxeB3_ASaezdR8-sdGhib9Y4Mj-ZMzKGkqZxJGKjM/pub?gid=1185246626&single=true&output=csv";
+const SHEET_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTJRhr9oBhh9VhVYuPhLHACu0pnXTOFceSW8mYnljuHNqVE7Zy49RfZfQA0OlmIZzHmLeA64wDrU2ed/pub?gid=2061645292&single=true&output=csv";
 
 function loadData() {
     return fetch(SHEET_URL, { cache: "no-store" })
