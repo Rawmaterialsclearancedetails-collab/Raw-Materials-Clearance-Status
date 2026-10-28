@@ -208,12 +208,12 @@ function renderResult(rawId) {
     // Sheet value (PASS / FAIL / HOLD / blank) -> text, color and icon shown on screen
     const status = getVal(row, "Status");
     const s = status.toLowerCase();
-    let statusClass = "";      // color: pass = green, fail = red, hold = orange, progress = blue
+    let statusClass = "";      // color: pass = green, fail = red, hold = orange, progress = yellow
     let statusText = status;   // unknown values are shown as they are
-    let statusIcon = "";       // clock icon only for "working in progress"
+    let statusIcon = "";       // clock icon only for "in process"
     if (s === "") {
         statusClass = "progress";
-        statusText = "WORKING IN PROGRESS";
+        statusText = "IN PROCESS";
         statusIcon = ICON_CLOCK;
     } else if (s.indexOf("pass") > -1 || s.indexOf("accept") > -1) {
         statusClass = "pass";
